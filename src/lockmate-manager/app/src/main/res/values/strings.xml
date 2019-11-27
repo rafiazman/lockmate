@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lockmate</string>
+    <string name="developers">Ahmad Rafiuddin</string>
+    <string name="action_add_user">Add User</string>
+    <string name="action_edit_user">Edit User</string>
+    <string name="action_about">About</string>
+    <string name="action_view_access_log">Access Log</string>
+    <string name="app_full_description">Lockmate is a mobile application interface for UTM Lab Technicians to manage valid QR codes accepted by the Lockmate Scanner.</string>
+</resources>

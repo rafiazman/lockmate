@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_log_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_state_drawable"
+    android:clickable="true"
+    android:minHeight="72dp">
+
+    <ImageView
+        android:id="@+id/img_log_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/cont_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/img_log_avatar"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_log_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ahmad Rafiuddin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/lbl_log_matric_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A13CS0175"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="64dp"
+                android:text="Scanned:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/lbl_log_scantime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="64dp"
+                android:text="2017-05-15 22:54:29" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/cont_record"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

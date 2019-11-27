@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_user_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_state_drawable"
+    android:clickable="true"
+    android:minHeight="72dp">
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
+    <ImageView
+        android:id="@+id/img_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/cont_user_textviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/img_right_arrow"
+        android:layout_toRightOf="@id/img_avatar"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/lbl_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmad Rafiuddin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/lbl_matric_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A13CS0175"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/cont_user_textviews"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

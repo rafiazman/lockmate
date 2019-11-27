@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Lockmate"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:src="@mipmap/ic_lockmate" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/app_full_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Version: \nLast Updated On:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:text="ALPHA \n30/04/2017" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Developed by:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:text="@string/developers" />
+    </LinearLayout>
+
+</LinearLayout>

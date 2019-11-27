@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickStart"
+            android:text="Begin" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickStop"
+            android:text="Stop" />
+
+    </LinearLayout>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/infoLayout"
+        android:layout_alignParentTop="true"></com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <TextView
+        android:id="@+id/lbl_console"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/infoLayout"
+        android:layout_toRightOf="@id/infoLayout"
+        android:background="#000"
+        android:gravity="bottom"
+        android:paddingLeft="8dp"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/barcodePreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/lbl_console"
+        android:layout_toRightOf="@id/lbl_console"
+        android:background="#000" />
+
+</RelativeLayout>
